@@ -1,0 +1,8 @@
+*~
+local.mk
+build/generic
+build/lib
+tags
+.DS_Store
+Makefile
+node_modules/
