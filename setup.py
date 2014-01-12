@@ -23,7 +23,7 @@ except IOError:
 setup(
     name='django-ng-pdfviewer',
     zip_safe=False,
-    version='.1',
+    version='0.1',
     url="http://github.com/akrennmair/ng-pdfviewer",
     description='ng-pdfviewer packaged in a handy django app to speed up new applications and reduce duplication.',
     long_description=long_description,
