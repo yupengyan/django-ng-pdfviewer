@@ -1,6 +1,6 @@
 import os
 from os.path import join, dirname
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 def recursiveFileGenerator(rootDir):
     """Recursively yield every file within the specified directory."""
@@ -22,6 +22,7 @@ except IOError:
 
 setup(
     name='django-ng-pdfviewer',
+    zip_safe=False,
     version='.1',
     url="http://github.com/akrennmair/ng-pdfviewer",
     description='ng-pdfviewer packaged in a handy django app to speed up new applications and reduce duplication.',

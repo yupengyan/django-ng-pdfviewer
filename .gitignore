@@ -1,8 +1,10 @@
+*.egg-info
 *~
-local.mk
-build/generic
-build/lib
-tags
-.DS_Store
-Makefile
-node_modules/
+*.pot
+*.py[co]
+MANIFEST
+dist/
+docs/_build/
+tests/coverage_html/
+tests/.coverage
+build/
