@@ -1,6 +1,6 @@
 # ng-pdfviewer
 
-[ ![Codeship Status for CaseRails/django-ng-pdfviewer](https://www.codeship.io/projects/8c2429f0-5d66-0131-b277-0261d5c39723/status?branch=master)](https://www.codeship.io/projects/11983)
+[ ![Codeship Status for CaseRails/django-ng-pdfviewer](https://www.codeship.io/projects/8c2429f0-5d66-0131-b277-0261d5c39723/status?branch=master)](https://www.codeship.io/projects/11983) 
 
 AngularJS PDF viewer directive using pdf.js.
 
