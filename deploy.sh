@@ -1,5 +1,7 @@
-curl https://raw2.github.com/CaseRails/ci_scripts/master/deploy.py > deploy.py
-curl https://raw2.github.com/CaseRails/ci_scripts/master/requirements.txt > deploy_requirements.txt
-
-pip install -r deploy_requirements.txt
-python deploy.py
+set -e
+export PIP_DOWNLOAD_CACHE=~/.pip_cache/
+export CI_DIST=~/clone/ci_scripts/dist
+export PACKAGE_DIST=~/clone/dist
+export PIP_FIND_LINKS="$PIP_DOWNLOAD_CACHE $CI_DIST $PACKAGE_DIST"
+pip install $PACKAGE_NAME
+echo "from ci_scripts import deploy" | python
