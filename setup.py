@@ -21,7 +21,7 @@ except IOError:
     long_description = None
 
 setup(
-    name='django-ng-pdfviewer',
+    name='ng_pdfviewer',
     zip_safe=False,
     version='0.1',
     url="http://github.com/akrennmair/ng-pdfviewer",
