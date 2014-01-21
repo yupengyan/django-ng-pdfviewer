@@ -1,7 +1,4 @@
-set -xe
-#
-# Build and install ci_scripts
-#
+set -x
 mkdir -p ~/.pip_cache
 export ORIGINAL_HOME=`pwd`
 export ORIGINAL_PACKAGE_NAME=$PACKAGE_NAME
@@ -18,12 +15,9 @@ cd ci_scripts
 cd $ORIGINAL_HOME
 export PACKAGE_NAME=$ORIGINAL_PACKAGE_NAME
 $PIP install ci_scripts
-#
-# End installation of ci_scripts
-#
 python setup.py clean
 python setup.py build
 python setup.py bdist_wheel
-#python setup.py bdist_egg
+python setup.py bdist_egg
 cp dist/*.egg $PIP_DOWNLOAD_CACHE
-#cp dist/*.whl $PIP_DOWNLOAD_CACHE
+cp dist/*.whl $PIP_DOWNLOAD_CACHE
